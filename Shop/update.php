@@ -24,35 +24,41 @@
         </div>
         <form>
             <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label>نام</label>
-                    <input type="text" class="form-control">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>نام لباس</label>
+                        <input type="text" class="form-control" name="Name" placeholder="مثال : پیراهن">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>رنگ</label>
+                        <input type="text" class="form-control" name="Color" placeholder="مثال : قرمز">
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label>نام خانوادگی</label>
-                    <input type="text" class="form-control">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>سایز</label>
+                        <input type="text" class="form-control" name="Size" placeholder="مثال : 40">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>جنس</label>
+                        <input type="text" class="form-control" name="Material" placeholder="مثال : نخ">
+                    </div>
                 </div>
-            </div>
-            <div class="form-group">
-                <label>ایمیل</label>
-                <input type="email" class="form-control">
-            </div>
-            <div class="form-group">
-                <label>شماره</label>
-                <input type="number" class="form-control">
-            </div>
-            <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label>آدرس</label>
-                    <textarea class="form-control" rows="5"></textarea>
-
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label>قیمت</label>
+                        <input type="text" class="form-control" name="Price" placeholder="مثال : 4000000">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label>عکس</label>
+                        <input type="text" class="form-control" name="Picture" placeholder="مثال : بدون عکس">
+                    </div>
                 </div>
-            </div>
-            <button type="submit" class="btn btn-warning">ویرایش</button>
-
+                <button type="submit" class="btn btn-warning">ویرایش</button>
         </form>
 
 
     </div>
 </body>
+
 </html>
