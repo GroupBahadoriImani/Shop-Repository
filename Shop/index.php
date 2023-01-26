@@ -36,7 +36,7 @@ if (isset($_REQUEST['del'])) {
             <div class="col-md-12">
                 <h3 class="p-3 pt-5">فروشگاه لباس بهادری ایمانی</h3>
                 <hr />
-                <a href="#"><button class="btn btn-primary font-16 m-3">وارد کردن رکورد</button></a>
+                <a href="insert.php"><button class="btn btn-primary font-16 m-3">وارد کردن رکورد</button></a>
                 <div class="table-responsive">
                     <table id="mytable" class="table table-bordered table-striped m-2">
                         <thead>
@@ -51,7 +51,7 @@ if (isset($_REQUEST['del'])) {
                         <tbody>
 
                             <?php
-                            $sql = "SELECT Id, Name, Color, Size, Material, Price, Picture From product";
+                            $sql = 'SELECT Id, Name, Color, Size, Material, Price, Picture From product';
                             $query = $conn->prepare($sql);
                             $query->execute();
                             $results = $query->fetchAll(PDO::FETCH_OBJ);
