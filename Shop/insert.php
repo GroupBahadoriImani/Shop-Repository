@@ -3,6 +3,7 @@
 require_once 'dbconfig.php';
 
 if (isset($_POST['insert'])) {
+    
     $name = $_POST['Name'];
     $color = $_POST['Color'];
     $size = $_POST['Size'];

@@ -9,6 +9,7 @@ if (isset($_REQUEST['del'])) {
     $query = $conn->prepare($sql);
     $query->bindParam(':id', $productId, PDO::PARAM_STR);
     $query->execute();
+    
     echo "<script>alert('حذف با موفقیت انجام شد')</script>";
     echo "<script>window.lcation.href='index.php'</script>";
 }
